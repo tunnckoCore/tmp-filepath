@@ -10,8 +10,8 @@
     "test": "standard && node test.js"
   },
   "dependencies": {
-    "cuid": "^1.2.5",
-    "os-tmpdir": "^1.0.1"
+    "cuid": "~1.2.5",
+    "os-tmpdir": "~1.0.1"
   },
   "devDependencies": {
     "assertit": "^0.1.0"
