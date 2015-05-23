@@ -29,6 +29,13 @@ tmpFilepath('.js')
 ```
 
 
+## See also
+- [koa-ip-filter](https://github.com/tunnckocore/koa-ip-filter): Filter IPs with a glob pattern, regex, string, array or… [more](https://github.com/tunnckocore/koa-ip-filter)
+- [koa](https://github.com/koajs/koa): Koa web app framework
+- [tempfile](https://github.com/sindresorhus/tempfile): Get a random temp file path
+- [vinyl-filter-since](https://github.com/tunnckoCore/vinyl-filter-since): Vinyl adapter (gulp plugin) to filter files that have been… [more](https://github.com/tunnckoCore/vinyl-filter-since)
+
+
 ## Contributing
 
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/tmp-filepath/issues/new).
