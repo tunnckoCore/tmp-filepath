@@ -1,6 +1,6 @@
 {
   "name": "tmp-filepath",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Generate temp filepath (without write to disk) cross platform",
   "repository": "tunnckoCore/tmp-filepath",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
