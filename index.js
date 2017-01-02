@@ -1,16 +1,16 @@
 /*!
  * tmp-filepath <https://github.com/tunnckoCore/tmp-filepath>
  *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
+ * Copyright (c) Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)
  * Released under the MIT license.
  */
 
 'use strict'
 
-var fath = require('path')
-var cuid = require('cuid')
-var osTmpdir = require('os-tmpdir')
+const os = require('os')
+const path = require('path')
+const cuid = require('cuid')
 
-module.exports = function (ext) {
-  return fath.join(osTmpdir(), cuid() + (ext || ''))
-}
+const tmpFilepath = (ext) => path.join(os.tmpdir(), cuid() + (ext || ''))
+
+module.exports = exports.default = tmpFilepath

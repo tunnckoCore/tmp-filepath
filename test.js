@@ -1,7 +1,7 @@
 /*!
  * tmp-filepath <https://github.com/tunnckoCore/tmp-filepath>
  *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
+ * Copyright (c) Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)
  * Released under the MIT license.
  */
 
@@ -9,14 +9,16 @@
 
 'use strict'
 
-var test = require('assertit')
-var tmpFilepath = require('./index')
-var tmpdir = require('os').tmpdir()
+const os = require('os')
+const test = require('mukla')
+const tmpFilepath = require('./index')
 
-test('should generate a random temp file path', function () {
-  test.ok(tmpFilepath().indexOf(tmpdir) !== -1)
+test('should generate a random temp file path', (done) => {
+  test.strictEqual(tmpFilepath().indexOf(os.tmpdir()) !== -1, true)
+  done()
 })
 
-test('should have an option to supply an extension', function () {
-  test.ok(/png$/.test(tmpFilepath('.png')))
+test('should have an option to supply an extension', (done) => {
+  test.strictEqual(/png$/.test(tmpFilepath('.png')), true)
+  done()
 })
