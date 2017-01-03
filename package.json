@@ -1,6 +1,6 @@
 {
   "name": "tmp-filepath",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Generate temporary filepath string (without writing to disk). Using scaleable, secure and fast cross-platform [cuid][] package",
   "repository": "tunnckoCore/tmp-filepath",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)",
